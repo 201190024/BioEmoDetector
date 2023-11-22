@@ -1,0 +1,8 @@
+numpy==1.23.5
+pandas==1.5.3
+torch==2.1.0
+scikit-learn==1.2.2
+transformers==4.35.0
+nltk==3.8.1
+jupyter==1.0.0
+jupyter-client==8.2.0
