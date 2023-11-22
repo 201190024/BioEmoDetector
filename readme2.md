@@ -9,9 +9,9 @@ BioEmoDetector is an open-source framework for emotion prediction in texts relat
 1. [Pre-processing](#pre-processing)
 2. [Biomedical Pre-trained Language Model Training](#biomedical-pre-trained-language-model-training)
 3. [Features](#Features)
-4. [Prerequisites](#Prerequisites)
-5. [Usage](#usage)
-6. [Contributing](#contributing)
+5. [Prerequisites](#Prerequisites)
+6. [Usage](#usage)
+7. [Contributing](#contributing)
    
 ## Pre-processing
 The BioEmoDetector framework commences with a critical text pre-processing phase, serving as a foundational step to ensure uniformity and consistency in the input data. This process encompasses several key stages:
@@ -30,7 +30,6 @@ This phase configures and fine-tunes Pre-trained Language Models (PLMs) to recog
 - **Model Configuration and Storage**: Saving model configurations and trained models.
 
 ## Features
-
 - **Ensemble Model:** The framework employs an ensemble of biomedical and clinical pre-trained language models, including CODER, BioBERT, BioClinical BERT, SciBERT, ClinicalLongformer, BlueBERT, and BioMedRoberta.
 
 - **Various Input Options:** Users can choose between two modes:
@@ -40,7 +39,6 @@ This phase configures and fine-tunes Pre-trained Language Models (PLMs) to recog
 ## Getting Started
 
 ### Prerequisites
-
 - Python 3.6 or higher
 - Install required libraries using `requirements.txt`
 
@@ -60,14 +58,12 @@ cd BioEmoDetector`
 4. After running the command, you will find the results saved to `Results.txt`, providing predictions for each model and majority voting results.
 
 - Run the prediction script with custom input:
-!python src/Prediction.py True`
+`!python src/Prediction.py True`
 
 Follow the on-screen instructions to make predictions based on your preferred input mode.
-![choices](https://github.com/201190024/BioEmoDetector/assets/54450055/f720c511-8e3f-4642-b10c-a61374b709f3)
+![choices](https://github.com/201190024/BioEmoDetector/assets/54450055/521dee61-0999-4b74-84b4-201045d41307)
 
 **Training Models**
-- The models included in BioEmoDetector were trained on a preprocessed dataset. If you wish to retrain or fine-tune the models, refer to the models script in the src/ directory.
+- The models included in BioEmoDetector were trained on a preprocessed dataset. If you wish to retrain or fine-tune the models, refer to the models' script in the `src/ directory`.
 
-`cd training
-python train_models.py`
 
