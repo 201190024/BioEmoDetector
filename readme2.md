@@ -48,7 +48,7 @@ This phase configures and fine-tunes Pre-trained Language Models (PLMs) to recog
 1. Clone the repository:
 `!git clone https://201190024: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@github.com/201190024/BioEmoDetector.git`
 
-`cd BioEmoDetector`
+`%cd BioEmoDetector`
 
 3. Install required packages:
 `pip install -r requirement.txt`
