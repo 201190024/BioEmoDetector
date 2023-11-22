@@ -6,13 +6,13 @@ The BioEmoDetector framework is a meticulously designed system for detecting emo
 </p>
 
 ## Table of Contents
-1. [Pre-processing](#pre-processing)
+1. [Pre-processing](#Pre-processing)
 2. [Biomedical Pre-trained Language Model Training](#biomedical-pre-trained-language-model-training)
 3. [Emotion Prediction](#emotion-prediction)
 4. [Usage](#usage)
 5. [Contributing](#contributing)
    
-## 1. Pre-processing
+## Pre-processing
 The BioEmoDetector framework commences with a critical text pre-processing phase, serving as a foundational step to ensure uniformity and consistency in the input data. This process encompasses several key stages:
 - **Lowercasing**: Text is systematically converted to lowercase, ensuring uniformity and case-insensitivity across the dataset.
 - **Special Character, Number, and Whitespace Removal**: This step involves the removal of special characters, numerical digits, and excessive whitespace. 
@@ -20,7 +20,7 @@ The BioEmoDetector framework commences with a critical text pre-processing phase
 - **Stopword Removal**: Common stopwords are eliminated to focus on the core and more informative content.
 - **Lemmatization**: Text is lemmatized to reduce words to their base form, improving the quality of subsequent analysis.
 
-## 2. Biomedical Pre-trained Language Model Training
+## Biomedical Pre-trained Language Model Training
 This phase configures and fine-tunes Pre-trained Language Models (PLMs) to recognize emotions in clinical text. Key steps include:
 - **Data Preparation**: Using the Careopinion dataset (25,000 patient opinions) for training. An additional 3,500 opinions are reserved for validation.
 - **Text Representation**: Tokenizing patient opinions for better analysis.
@@ -28,7 +28,7 @@ This phase configures and fine-tunes Pre-trained Language Models (PLMs) to recog
 - **Validation**: Assessing model performance using reserved opinions.
 - **Model Configuration and Storage**: Saving model configurations and trained models.
 
-## 3. Emotion Prediction
+## Emotion Prediction
 Once PLMs are trained, users can predict emotions. 
 - Input text: Users can input text via plain text, TXT, CSV, JSON files, or freeform text.
 - Model Selection: Users choose a specific model or use multiple models for emotion prediction.
@@ -41,7 +41,7 @@ To get started with the BioEmoDetector framework, follow these steps:
 2. Set the project directory as the working directory `cd <project_directory_path>`.
 3. Install the required dependencies by running `pip install -r requirements.txt`.
 4. Run the prediction script to perform emotion predictions based on the pre-trained models.
-   ![choices](https://github.com/201190024/BioEmoDetector/assets/54450055/f720c511-8e3f-4642-b10c-a61374b709f3)
+   ![choices](https://github.com/201190024/BioEmoDetector/assets/54450055/521dee61-0999-4b74-84b4-201045d41307)
 6. Choose your input method (free text, TXT, CSV, JSON) and model options (Single Model, Specific Models, All Models, Majority Voting).
 7. Interpret Results - The prediction results will be generated and saved in a file named "results.txt".
 Open the "results.txt" file to view the predicted emotions for the provided input.
