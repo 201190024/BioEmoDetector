@@ -60,7 +60,7 @@ cd BioEmoDetector`
 4. After running the command, you will find the results saved to `Results.txt`, providing predictions for each model and majority voting results.
 
 - Run the prediction script with custom input:
-`python src/Prediction.py --user_input=True`
+!python src/Prediction.py True`
 
 Follow the on-screen instructions to make predictions based on your preferred input mode.
 ![choices](https://github.com/201190024/BioEmoDetector/assets/54450055/f720c511-8e3f-4642-b10c-a61374b709f3)
