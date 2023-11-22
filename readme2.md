@@ -1,8 +1,8 @@
 # BioEmoDetector
 
 BioEmoDetector is an open-source framework for emotion prediction in texts related to medical environments. This tool leverages multiple biomedical and clinical pre-trained language models for emotion classification in clinical texts, providing a flexible ensemble model for accurate predictions.
- <p align="center">
-<img src="https://github.com/201190024/BioEmoDetector/assets/54450055/1f5979fa-3580-4d78-8cf2-da812b6a28e4" width="700">
+<p align="center">
+<img src="https://github.com/201190024/BioEmoDetector/assets/54450055/7ae9b076-3e25-4ae9-8736-e85b09bb395c" width="700">
 </p>
 
 ## Table of Contents
@@ -13,7 +13,7 @@ BioEmoDetector is an open-source framework for emotion prediction in texts relat
 5. [Usage](#usage)
 6. [Contributing](#contributing)
    
-## 1. Pre-processing
+## Pre-processing
 The BioEmoDetector framework commences with a critical text pre-processing phase, serving as a foundational step to ensure uniformity and consistency in the input data. This process encompasses several key stages:
 - **Lowercasing**: Text is systematically converted to lowercase, ensuring uniformity and case-insensitivity across the dataset.
 - **Special Character, Number, and Whitespace Removal**: This step involves the removal of special characters, numerical digits, and excessive whitespace. 
@@ -21,7 +21,7 @@ The BioEmoDetector framework commences with a critical text pre-processing phase
 - **Stopword Removal**: Common stopwords are eliminated to focus on the core and more informative content.
 - **Lemmatization**: Text is lemmatized to reduce words to their base form, improving the quality of subsequent analysis.
 
-## 2. Biomedical Pre-trained Language Model Training
+## Biomedical Pre-trained Language Model Training
 This phase configures and fine-tunes Pre-trained Language Models (PLMs) to recognize emotions in clinical text. Key steps include:
 - **Data Preparation**: Using the Careopinion dataset (25,000 patient opinions) for training. An additional 3,500 opinions are reserved for validation.
 - **Text Representation**: Tokenizing patient opinions for better analysis.
