@@ -2,8 +2,9 @@
 
 BioEmoDetector is an open-source framework for emotion prediction in texts related to medical environments. This tool leverages multiple biomedical and clinical pre-trained language models for emotion classification in clinical texts, providing a flexible ensemble model for accurate predictions.
 <p align="center">
-<img src="https://github.com/201190024/BioEmoDetector/assets/54450055/7ae9b076-3e25-4ae9-8736-e85b09bb395c" width="700">
+<img src="https://github.com/201190024/BioEmoDetector/assets/54450055/e7a98e28-f7f9-4613-ab6c-09428b0a65d2" width="700">
 </p>
+
 
 ## Table of Contents
 1. [Pre-processing](#pre-processing)
