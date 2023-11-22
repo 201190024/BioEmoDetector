@@ -46,16 +46,17 @@ This phase configures and fine-tunes Pre-trained Language Models (PLMs) to recog
 
 ## Usage
 1. Clone the repository:
-`git clone https://your_username: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@github.com/201190024/BioEmoDetector.git
-cd BioEmoDetector`
+`!git clone https://201190024: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@github.com/201190024/BioEmoDetector.git`
 
-2. Install required packages:
+`cd BioEmoDetector`
+
+3. Install required packages:
 `pip install -r requirement.txt`
 
-3. Run the main prediction script:
+4. Run the main prediction script:
 `python src/Prediction.py`
 
-4. After running the command, you will find the results saved to `Results.txt`, providing predictions for each model and majority voting results.
+5. After running the command, you will find the results saved to `Results.txt`, providing predictions for each model and majority voting results.
 
 - Run the prediction script with custom input:
 `!python src/Prediction.py True`
