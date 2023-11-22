@@ -1,16 +1,17 @@
 # BioEmoDetector
-The BioEmoDetector framework is a meticulously designed system for detecting emotions in clinical text data. It employs a systematic approach including three distinct stages. The first of these stages is data pre-processing. This process entails cleaning and organizing the data to eliminate inconsistencies and enhance its quality. After data pre-processing, the framework proceeds to the biomedical and clinical PLM training stage, where biomedical and clinical PLMs (CODER, BlueBERT, SciBERT, BioMed-RoBERTa, Bio_ClinicalBERT, Clinical_Longformer, BioBERT) are comprehensively trained. These models form the foundational elements of the emotion prediction process. In the final stage, the framework utilizes the pre-trained models to predict emotions from clinical text data.
 
+BioEmoDetector is an open-source framework for emotion prediction in texts related to medical environments. This tool leverages multiple biomedical and clinical pre-trained language models for emotion classification in clinical texts, providing a flexible ensemble model for accurate predictions.
 <p align="center">
 <img src="https://github.com/201190024/BioEmoDetector/assets/54450055/7ae9b076-3e25-4ae9-8736-e85b09bb395c" width="700">
 </p>
 
 ## Table of Contents
-1. [Pre-processing](#Pre-processing)
+1. [Pre-processing](#pre-processing)
 2. [Biomedical Pre-trained Language Model Training](#biomedical-pre-trained-language-model-training)
-3. [Emotion Prediction](#emotion-prediction)
-4. [Usage](#usage)
-5. [Contributing](#contributing)
+3. [Features](#Features)
+5. [Prerequisites](#Prerequisites)
+6. [Usage](#usage)
+7. [Contributing](#contributing)
    
 ## Pre-processing
 The BioEmoDetector framework commences with a critical text pre-processing phase, serving as a foundational step to ensure uniformity and consistency in the input data. This process encompasses several key stages:
@@ -28,26 +29,40 @@ This phase configures and fine-tunes Pre-trained Language Models (PLMs) to recog
 - **Validation**: Assessing model performance using reserved opinions.
 - **Model Configuration and Storage**: Saving model configurations and trained models.
 
-## Emotion Prediction
-Once PLMs are trained, users can predict emotions. 
-- Input text: Users can input text via plain text, TXT, CSV, JSON files, or freeform text.
-- Model Selection: Users choose a specific model or use multiple models for emotion prediction.
-- Majority Voting Ensemble: This method combines the results from all models to give you a single, comprehensive prediction based on the majority vote.
-  
-The results are a "results.TXT" file of the emotion prediction presented as probabilities assigned to each emotion for every opinion or sentence entered by the user.
+## Features
+- **Ensemble Model:** The framework employs an ensemble of biomedical and clinical pre-trained language models, including CODER, BioBERT, BioClinical BERT, SciBERT, ClinicalLongformer, BlueBERT, and BioMedRoberta.
+
+- **Various Input Options:** Users can choose between two modes:
+  1. **Default Input (user_input=False):** Predictions are made based on a default text file provided by the user. The results are saved in a `Results.txt` file, including predictions from all models and majority voting.
+  2. **Custom Input (user_input=True):** Users have the flexibility to upload various data file formats (txt, CSV, JSON) or input free text. Multiple prediction options are available, including choosing specific models, pairs of models, all models, or majority voting. Results are saved in a `Results.txt` file.
+
+## Getting Started
+
+### Prerequisites
+- Python 3.6 or higher
+- Install required libraries using `requirements.txt`
+
+`pip install -r requirements.txt`
+
 ## Usage
-To get started with the BioEmoDetector framework, follow these steps:
-1. Clone this repository.
-2. Set the project directory as the working directory `cd <project_directory_path>`.
-3. Install the required dependencies by running `pip install -r requirements.txt`.
-4. Run the prediction script to perform emotion predictions based on the pre-trained models.
-   ![choices](https://github.com/201190024/BioEmoDetector/assets/54450055/521dee61-0999-4b74-84b4-201045d41307)
-6. Choose your input method (free text, TXT, CSV, JSON) and model options (Single Model, Specific Models, All Models, Majority Voting).
-7. Interpret Results - The prediction results will be generated and saved in a file named "results.txt".
-Open the "results.txt" file to view the predicted emotions for the provided input.
+1. Clone the repository:
+`!git clone https://201190024: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@github.com/201190024/BioEmoDetector.git`
 
-## Contributing
-If you'd like to contribute to the BioEmoDetector framework, we welcome your contributions. Feel free to open issues, suggest improvements, or submit pull requests. Please adhere to the project's guidelines when contributing.
-For more information, contact:
-Bashar at bashar.alshouha1993@gmail.com.
+`%cd BioEmoDetector`
 
+3. Install required packages:
+`pip install -r requirement.txt`
+
+4. Run the main prediction script:
+`python src/Prediction.py`
+
+5. After running the command, you will find the results saved to `Results.txt`, providing predictions for each model and majority voting results.
+
+- Run the prediction script with custom input:
+`!python src/Prediction.py True`
+
+Follow the on-screen instructions to make predictions based on your preferred input mode.
+![choices](https://github.com/201190024/BioEmoDetector/assets/54450055/521dee61-0999-4b74-84b4-201045d41307)
+
+**Training Models**
+- The models included in BioEmoDetector were trained on a preprocessed dataset. If you wish to retrain or fine-tune the models, refer to the models' script in the `src/ directory`.
