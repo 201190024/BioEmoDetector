@@ -2,8 +2,7 @@
 The BioEmoDetector framework is a meticulously designed system for detecting emotions in clinical text data. It employs a systematic approach including three distinct stages. The first of these stages is data pre-processing. This process entails cleaning and organizing the data to eliminate inconsistencies and enhance its quality. After data pre-processing, the framework proceeds to the biomedical and clinical PLM training stage, where biomedical and clinical PLMs (CODER, BlueBERT, SciBERT, BioMed-RoBERTa, Bio_ClinicalBERT, Clinical_Longformer, BioBERT) are comprehensively trained. These models form the foundational elements of the emotion prediction process. In the final stage, the framework utilizes the pre-trained models to predict emotions from clinical text data.
 
 <p align="center">
-<img src="![software impact 7 models](https://github.com/201190024/BioEmoDetector/assets/54450055/7ae9b076-3e25-4ae9-8736-e85b09bb395c)
-" width="700">
+<img src="![software impact 7 models](https://github.com/201190024/BioEmoDetector/assets/54450055/7ae9b076-3e25-4ae9-8736-e85b09bb395c" width="700">
 </p>
 
 ## Table of Contents
