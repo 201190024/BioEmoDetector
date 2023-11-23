@@ -63,7 +63,8 @@ This phase configures and fine-tunes Pre-trained Language Models (PLMs) to recog
 `!python src/Prediction.py True`
 
 Follow the on-screen instructions to make predictions based on your preferred input mode.
-![choices](https://github.com/201190024/BioEmoDetector/assets/54450055/521dee61-0999-4b74-84b4-201045d41307)
+![choices](https://github.com/201190024/BioEmoDetector/assets/54450055/8df96fab-95f4-422d-a7be-3340ed2fd550)
+
 
 **Training Models**
 - The models included in BioEmoDetector were trained on a preprocessed dataset. If you wish to retrain or fine-tune the models, refer to the models' script in the `src/ directory`.
