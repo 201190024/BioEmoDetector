@@ -1,0 +1,12 @@
+BioBERT=NO
+BioMedRoBERTa=YES
+BlueBERT=NO
+ClinicalBERT=NO
+CODER=YES
+SciBERT=yes
+ClinicalLongFormer=no
+MajorityVoting=yes
+File=test case text.json
+FileFormat=json
+Sentences=no
+
