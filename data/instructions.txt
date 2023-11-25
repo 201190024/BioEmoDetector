@@ -6,7 +6,6 @@ CODER=YES
 SciBERT=yes
 ClinicalLongFormer=no
 MajorityVoting=yes
-File=test case text.json
+File=data/test case text.json
 FileFormat=json
 Sentences=no
-
