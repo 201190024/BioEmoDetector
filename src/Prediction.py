@@ -172,7 +172,7 @@ else:
     # Output results to a text file
     if not os.path.exists('results'):
         os.mkdir('results')
-    output_file_name = "/results/Results.txt"
+    output_file_name = "Results.txt"
     try:
         with open(output_file_name, 'w') as text_file:
             # Print results for each selected model
