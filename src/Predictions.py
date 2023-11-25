@@ -21,37 +21,37 @@ ClinicalLongFormer_path = hf_hub_download(repo_id="Bashar-Alshouha/BioEmoDetecto
 # Define the paths to the configuration files and the binary model files for each model
 model_paths = {
     "BioBERT": {
-        "config": '/root/capsule/data/BioBERTconfig.json',
+        "config": 'config/BioBERTconfig.json',
         "model": BioBERT_path,
         "tokenizer": "dmis-lab/biobert-base-cased-v1.1"
     },
     "BioMedRoBERTa": {
-        "config": '/root/capsule/data/BioMedRoBERTaconfig.json',
+        "config": 'config/BioMedRoBERTaconfig.json',
         "model": BioMedRoBERTa_path,
         "tokenizer": "allenai/biomed_roberta_base"
     },
     "BlueBERT": {
-        "config": '/root/capsule/data/BlueBERTconfig.json',
+        "config": 'config/BlueBERTconfig.json',
         "model": BlueBERT_path,
         "tokenizer": "bionlp/bluebert_pubmed_uncased_L-12_H-768_A-12"
     },
     "ClinicalBERT": {
-        "config": '/root/capsule/data/ClinicalBERTconfig.json',
+        "config": 'config/ClinicalBERTconfig.json',
         "model": ClinicalBERT_path,
         "tokenizer": "emilyalsentzer/Bio_ClinicalBERT"
     },
     "CODER": {
-        "config": '/root/capsule/data/CODERconfig.json',
+        "config": 'config/CODERconfig.json',
         "model": CODER_path,
         "tokenizer": "GanjinZero/UMLSBert_ENG"
     },
     "SciBERT": {
-        "config": '/root/capsule/data/SciBERTconfig.json',
+        "config": 'config/SciBERTconfig.json',
         "model": SciBERT_path,
         "tokenizer": "allenai/scibert_scivocab_cased"
     },
     "ClinicalLongFormer": {
-        "config": '/root/capsule/data/ClinicalLongFormerconfig.json',
+        "config": 'config/ClinicalLongFormerconfig.json',
         "model": ClinicalLongFormer_path,
         "tokenizer": "yikuan8/Clinical-Longformer"
     }
@@ -90,7 +90,7 @@ def load_models(instructions):
     return selected_models
 
 # Read instructions from the file
-instructions_file_name = "/root/capsule/data/instructions.txt"
+instructions_file_name = "data/instructions.txt"
 with open(instructions_file_name, 'r') as instructions_file:
     # Process instructions into a dictionary
     lines = instructions_file.read().splitlines()
