@@ -6,6 +6,6 @@ CODER=YES
 SciBERT=yes
 ClinicalLongFormer=no
 MajorityVoting=yes
-File="data/test case (txt).txt"
+File=data/test case (txt).txt
 FileFormat=txt
 Sentences=no
