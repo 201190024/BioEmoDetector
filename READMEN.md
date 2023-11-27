@@ -1,6 +1,8 @@
-##BioEmoDetector
-#Overview
+## BioEmoDetector
+
+# Overview
 The BioEmoDetector is a platform designed for predicting emotions in clinical narrative texts. With a specific structure and customizable options, users can run predictions using biomedical and clinical pre-trained language models. This README provides essential information on how to use the BioEmoDetector and customize the instructions file.
+
 <p align="center">
 <img src="https://github.com/201190024/BioEmoDetector/assets/54450055/e7a98e28-f7f9-4613-ab6c-09428b0a65d2" width="700">
 </p>
@@ -30,24 +32,26 @@ This phase configures and fine-tunes Pre-trained Language Models (PLMs) to recog
 - **Model Configuration and Storage**: Saving model configurations and trained models.
 
 ## Getting Started
--To run the program, follow these simple steps:
+- To run the program, follow these simple steps:
 
 1. Customize the instructions file (instructionss.txt) to specify the models you want to use for predictions.
 2. Choose whether to enable majority voting (MajorityVoting=YES) for ensemble results.
 3. Provide a file path in the instruction file (e.g., File=path) or enter plaintext sentences (e.g., PlainText=['sentence1', 'sentence2']).
 
-#Important Notes
+# Important Notes
 - If no models are selected, an error message will guide you to check the instructions.
 - Priority is given to file predictions. If you provide a file path and exclude PlainText=none, predictions will focus solely on the file content.
 - Conversely, if you enter plaintext sentences and exclude File=none, predictions will focus exclusively on those sentences.
 - An error message prompts correction if both File=None and PlainText=None are omitted.
 
-#Input Rules
+# Input Rules
 To ensure correct usage:
 
--For plaintext sentences, enclose each sentence in square brackets and single quotes, like this: PlainText=['sentence1', 'sentence2'].
--Supported file formats include TXT, CSV, and JSON. In JSON and CSV files, the column containing sentences must be labeled "sentences" for accurate predictions.
+- For plaintext sentences, enclose each sentence in square brackets and single quotes, like this: PlainText=['sentence1', 'sentence2'].
+- Supported file formats include TXT, CSV, and JSON. In JSON and CSV files, the column containing sentences must be labeled "sentences" for accurate predictions.
 
+## Running Predictions
+Once the instructions file is customized, initiate the prediction process with the following command:
 
 
 
