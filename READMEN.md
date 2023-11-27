@@ -1,6 +1,6 @@
-## BioEmoDetector
+# BioEmoDetector
 
-# Overview
+## Overview
 The BioEmoDetector is a platform designed for predicting emotions in clinical narrative texts. With a specific structure and customizable options, users can run predictions using biomedical and clinical pre-trained language models. This README provides essential information on how to use the BioEmoDetector and customize the instructions file.
 
 <p align="center">
@@ -61,13 +61,11 @@ Once the instructions file is customized, initiate the prediction process with t
 - Python 3.6 or higher
 - Install required libraries using `requirements.txt`
 
-`pip install -r requirements.txt`
-
 ## Usage
 1. Clone the repository:
-`!git clone https://201190024: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@github.com/201190024/BioEmoDetector.git`
+`!git clone https://your_username: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@github.com/201190024/BioEmoDetector.git`
 
-`%cd BioEmoDetector`
+2. changes the current working directory to BioEmoDetector `%cd BioEmoDetector`
 
 3. Install required packages:
 `pip install -r requirement.txt`
