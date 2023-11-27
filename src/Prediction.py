@@ -132,7 +132,7 @@ else:
             with open(input_file_name, 'r') as txt_file:
                 sentences = txt_file.read().splitlines()
         else:
-            print(f"Unsupported file format: {file_extension}")
+            print(f"Error: Unsupported file format '{file_extension}'. The BioEmoDetector accepts only TXT, CSV, or JSON file formats.")
             sentences = []
 
     elif plaintext and plaintext.lower() != 'none':
