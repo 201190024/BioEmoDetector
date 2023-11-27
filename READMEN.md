@@ -57,11 +57,11 @@ To ensure correct usage:
 ## Running Predictions
 Once the instructions file is customized, initiate the prediction process with the following steps:
 
-## Prerequisites
+### Prerequisites
 - Python 3.6 or higher
 - Install required libraries using `requirements.txt`
 
-## Usage
+### Usage
 1. Clone the repository:
 `!git clone https://your_username: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@github.com/201190024/BioEmoDetector.git`
 
