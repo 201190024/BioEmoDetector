@@ -18,7 +18,8 @@ The BioEmoDetector is a platform designed for predicting emotions in clinical na
 8. [Usage](#Usage)
 
 ## Pre-processing
-The BioEmoDetector framework commences with a critical text pre-processing phase, serving as a foundational step to ensure uniformity and consistency in the input data. This process encompasses several key stages:
+The BioEmoDetector framework begins with a critical text pre-processing phase, serving as a foundational step to ensure uniformity and consistency in the input data. This process includes several key stages:
+
 - **Lowercasing**: Text is systematically converted to lowercase, ensuring uniformity and case-insensitivity across the dataset.
 - **Special Character, Number, and Whitespace Removal**: This step involves the removal of special characters, numerical digits, and excessive whitespace. 
 - **Tokenization**: Text is tokenized into individual words, enabling more granular analysis of the content.
