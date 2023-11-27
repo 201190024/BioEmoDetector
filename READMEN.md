@@ -39,22 +39,41 @@ This phase configures and fine-tunes Pre-trained Language Models (PLMs) to recog
 3. Provide a file path in the instruction file (e.g., File=path) or enter plaintext sentences (e.g., PlainText=['sentence1', 'sentence2']).
 
 # Important Notes
-- If no models are selected, an error message will guide you to check the instructions.
-- Priority is given to file predictions. If you provide a file path and exclude PlainText=none, predictions will focus solely on the file content.
-- Conversely, if you enter plaintext sentences and exclude File=none, predictions will focus exclusively on those sentences.
-- An error message prompts correction if both File=None and PlainText=None are omitted.
+
+- If no models are selected, an error message will guide the user to check the instructions.
+- If the user provides a file path and excludes PlainText=none, predictions will focus only on the file content.
+- Conversely, if the user enters PlainText sentences and excludes File=none, predictions will focus exclusively on those sentences.
+- Priority is given to file predictions. if the user provides a file path and PlainText, predictions will focus only on the file content.
+- An error message prompts correction if both File=None and PlainText=None are excluded.
 
 # Input Rules
 To ensure correct usage:
 
-- For plaintext sentences, enclose each sentence in square brackets and single quotes, like this: PlainText=['sentence1', 'sentence2'].
+- For PlainText sentences, include each sentence in square brackets and single quotes, like this: PlainText=['sentence1', 'sentence2'].
 - Supported file formats include TXT, CSV, and JSON. In JSON and CSV files, the column containing sentences must be labeled "sentences" for accurate predictions.
 
 ## Running Predictions
-Once the instructions file is customized, initiate the prediction process with the following command:
+Once the instructions file is customized, initiate the prediction process with the following steps:
 
+## Prerequisites
+- Python 3.6 or higher
+- Install required libraries using `requirements.txt`
 
+`pip install -r requirements.txt`
 
+## Usage
+1. Clone the repository:
+`!git clone https://201190024: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@github.com/201190024/BioEmoDetector.git`
+
+`%cd BioEmoDetector`
+
+3. Install required packages:
+`pip install -r requirement.txt`
+
+4. Run the main prediction script:
+`python src/Prediction.py`
+
+5. After running the command, you will find the results saved to `Results.txt`, providing predictions for each model selected and the majority voting results.
 
 
 
