@@ -112,22 +112,36 @@ model_names = load_models(instructions)
 if not model_names:
     print("No valid models selected. Please check the instructions.")
 else:
-    # Check if there is an extended file
-    file_format = instructions.get("FileFormat", "").lower()
+    # Check if the user provided a file, plaintext, both, or neither
     input_file_name = instructions.get("File", None)
+    plaintext = instructions.get("PlainText", None)
 
-    if input_file_name and file_format:
+    if input_file_name and input_file_name.lower() != 'none':
+        # Get the file extension
+        file_extension = input_file_name.split('.')[-1].lower()
+
         # Use the specified file format or print an error if not provided
-        if file_format == 'json':
+        if file_extension == 'json':
             with open(input_file_name, 'r') as json_file:
                 data = json.load(json_file)
                 sentences = data["sentences"]
-        elif file_format == 'csv':
+        elif file_extension == 'csv':
             df = pd.read_csv(input_file_name)
             sentences = df["sentences"].tolist()
-        elif file_format == 'txt':
+        elif file_extension == 'txt':
             with open(input_file_name, 'r') as txt_file:
                 sentences = txt_file.read().splitlines()
+        else:
+            print(f"Unsupported file format: {file_extension}")
+            sentences = []
+
+    elif plaintext and plaintext.lower() != 'none':
+        # sentences = plaintext.strip("[]").replace("'", "").split(', ')
+        sentences = [sentence.strip() for sentence in plaintext.strip("[]").split("', '")]
+
+    else:
+        print("Wrong configuration. Please provide either a file or plaintext.")
+        sentences = []
 
     # Predict for each selected model
     results = {}
@@ -138,6 +152,7 @@ else:
 
         model_results = []
         for input_text in sentences:
+            input_text = preprocess_text(input_text)
             # Tokenize the input text
             tokens = tokenizer(input_text, return_tensors='pt', padding=True, truncation=True, max_length=512)
 
