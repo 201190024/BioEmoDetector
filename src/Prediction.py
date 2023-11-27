@@ -90,7 +90,7 @@ def load_models(instructions):
     return selected_models
 
 # Read instructions from the file
-instructions_file_name = "data/instructions.txt"
+instructions_file_name = "src/Configuration.txt"
 with open(instructions_file_name, 'r') as instructions_file:
     # Process instructions into a dictionary
     lines = instructions_file.read().splitlines()
