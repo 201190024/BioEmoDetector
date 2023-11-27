@@ -10,10 +10,12 @@ The BioEmoDetector is a platform designed for predicting emotions in clinical na
 ## Table of Contents
 1. [Pre-processing](#pre-processing)
 2. [Biomedical Pre-trained Language Model Training](#biomedical-pre-trained-language-model-training)
-3. [Getting Started](#Getting Started)
-5. [Prerequisites](#Prerequisites)
-6. [Usage](#usage)
-7. [Contributing](#contributing)
+3. [Getting Started](#Getting-Started)
+4. [Important Notes](#Important-Notes)
+5. [Input Rules](#Input-Rules)
+6. [Running Predictions](#Running-Predictions)
+7. [Prerequisites](#Prerequisites)
+8. [Usage](#Usage)
 
 ## Pre-processing
 The BioEmoDetector framework commences with a critical text pre-processing phase, serving as a foundational step to ensure uniformity and consistency in the input data. This process encompasses several key stages:
@@ -38,7 +40,7 @@ This phase configures and fine-tunes Pre-trained Language Models (PLMs) to recog
 2. Choose whether to enable majority voting (MajorityVoting=YES) for ensemble results.
 3. Provide a file path in the instruction file (e.g., File=path) or enter plaintext sentences (e.g., PlainText=['sentence1', 'sentence2']).
 
-# Important Notes
+## Important Notes
 
 - If no models are selected, an error message will guide the user to check the instructions.
 - If the user provides a file path and excludes PlainText=none, predictions will focus only on the file content.
@@ -46,7 +48,7 @@ This phase configures and fine-tunes Pre-trained Language Models (PLMs) to recog
 - Priority is given to file predictions. if the user provides a file path and PlainText, predictions will focus only on the file content.
 - An error message prompts correction if both File=None and PlainText=None are excluded.
 
-# Input Rules
+## Input Rules
 To ensure correct usage:
 
 - For PlainText sentences, include each sentence in square brackets and single quotes, like this: PlainText=['sentence1', 'sentence2'].
@@ -73,51 +75,4 @@ Once the instructions file is customized, initiate the prediction process with t
 4. Run the main prediction script:
 `python src/Prediction.py`
 
-5. After running the command, you will find the results saved to `Results.txt`, providing predictions for each model selected and the majority voting results.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+5. After running the command, you will find the results saved to `Results.txt`, providing predictions for each model selected and the majority voting results
