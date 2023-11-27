@@ -37,7 +37,7 @@ This phase configures and fine-tunes Pre-trained Language Models (PLMs) to recog
 - To run the program, follow these simple steps:
 
 1. Customize the instructions file (instructionss.txt) to specify the models you want to use for predictions.
-2. Choose whether to enable majority voting (MajorityVoting=YES) for ensemble results.
+2. Choose whether to enable majority voting (MajorityVoting=yes) for ensemble results.
 3. Provide a file path in the instruction file (e.g., File=path) or enter plaintext sentences (e.g., PlainText=['sentence1', 'sentence2']).
 
 ## Important Notes
