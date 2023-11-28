@@ -7,4 +7,4 @@ SciBERT=no
 ClinicalLongFormer=no
 MajorityVoting=yes
 File=none
-PlainText=['bashar is happy, Jesus is friendly', 'ahmad is sad, fear, and joy']
+PlainText=['bashar is happy, Jesus is friendly', 'ahmad is sad, and fear']
