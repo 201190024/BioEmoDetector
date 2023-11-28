@@ -63,7 +63,7 @@ emotion_labels = ['anger', 'fear', 'sadness', 'calmness', 'disgust', 'pleasantne
 # Initialize an empty dictionary to store the models
 models = {}
 
-# Load and use each model based on instructions
+# Load and use each model based on the configuration
 def load_models(instructions):
     selected_models = []
     for model_name, model_data in model_paths.items():
@@ -89,7 +89,7 @@ def load_models(instructions):
 
     return selected_models
 
-# Read instructions from the file
+# Read Configuration from the file
 instructions_file_name = "src/Configuration.txt"
 with open(instructions_file_name, 'r') as instructions_file:
     # Process instructions into a dictionary
@@ -110,7 +110,7 @@ with open(instructions_file_name, 'r') as instructions_file:
 # Ensure at least one model is selected
 model_names = load_models(instructions)
 if not model_names:
-    print("No valid models selected. Please check the instructions.")
+    print("No valid models selected. Please check the configuration.")
 else:
     # Check if the user provided a file, plaintext, both, or neither
     input_file_name = instructions.get("File", None)
