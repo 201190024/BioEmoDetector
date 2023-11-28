@@ -1,7 +1,7 @@
 # BioEmoDetector
 
 ## Overview
-The BioEmoDetector is a platform designed for predicting emotions in clinical narrative texts. With a specific structure and customizable options, users can run predictions using biomedical and clinical pre-trained language models. This README provides essential information on how to use the BioEmoDetector and customize the instructions file.
+The BioEmoDetector is a platform designed for predicting emotions in clinical narrative texts. With a specific structure and customizable options, users can run predictions using biomedical and clinical pre-trained language models. This README provides essential information on how to use the BioEmoDetector and customize the Configuration file.
 
 <p align="center">
 <img src="https://github.com/201190024/BioEmoDetector/assets/54450055/e7a98e28-f7f9-4613-ab6c-09428b0a65d2" width="700">
@@ -37,13 +37,13 @@ This phase configures and fine-tunes Pre-trained Language Models (PLMs) to recog
 ## Getting Started
 - To run the program, follow these simple steps:
 
-1. Customize the instructions file (instructionss.txt) to specify the models you want to use for predictions.
+1. Customize the Configuration file (Configuration.txt) to specify the models you want to use for predictions.
 2. Choose whether to enable majority voting (MajorityVoting=yes) for ensemble results.
-3. Provide a file path in the instruction file (e.g., File=path) or enter plaintext sentences (e.g., PlainText=['sentence1', 'sentence2']).
+3. Provide a file path in the Configuration file (e.g., File=path) or enter plaintext sentences (e.g., PlainText=['sentence1', 'sentence2']).
 
 ## Important Notes
 
-- If no models are selected, an error message will guide the user to check the instructions.
+- If no models are selected, an error message will guide the user to check the configuration file.
 - If the user provides a file path and excludes PlainText=none, predictions will focus only on the file content.
 - Conversely, if the user enters PlainText sentences and excludes File=none, predictions will focus exclusively on those sentences.
 - Priority is given to file predictions. if the user provides a file path and PlainText, predictions will focus only on the file content.
@@ -56,7 +56,7 @@ To ensure correct usage:
 - Supported file formats include TXT, CSV, and JSON. In JSON and CSV files, the column containing sentences must be labeled "sentences" for accurate predictions.
 
 ## Running Predictions
-Once the instructions file is customized, initiate the prediction process with the following steps:
+Once the Configuration file is customized, initiate the prediction process with the following steps:
 
 ### Prerequisites
 - Python 3.6 or higher
