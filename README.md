@@ -28,7 +28,7 @@ The BioEmoDetector framework begins with a critical text pre-processing phase, s
 
 ## Biomedical Pre-trained Language Model Training
 This phase configures and fine-tunes Pre-trained Language Models (PLMs) to recognize emotions in clinical text. Key steps include:
-- **Data Preparation**: Using the Careopinion dataset (25,000 patient opinions) for training. An additional 3,500 opinions are reserved for validation.
+- **Data Preparation**: Using the Careopinion dataset (28,500 patient opinions) for training and validating.
 - **Text Representation**: Tokenizing patient opinions for better analysis.
 - **Training and Fine-Tuning**: Adapting PLMs (e.g., CODER, Bio_ClinicalBERT) for emotion prediction.
 - **Validation**: Assessing model performance using reserved opinions.
