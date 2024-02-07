@@ -39,7 +39,7 @@ This phase configures and fine-tunes Pre-trained Language Models (PLMs) to recog
 
 1. Customize the Configuration file (Configuration.txt) to specify the models you want to use for predictions.
 2. Choose whether to enable majority voting (MajorityVoting=yes) for ensemble results.
-3. Provide a file path in the Configuration file (e.g., File=path) or enter plaintext sentences (e.g., PlainText=['sentence1', 'sentence2']).
+3. Provide a file path in the Configuration file (e.g., File=path) or enter plaintext sentences (e.g., PlainText=['text1', 'text2']).
 
 ## Important Notes
 
