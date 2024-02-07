@@ -52,7 +52,7 @@ This phase configures and fine-tunes Pre-trained Language Models (PLMs) to recog
 ## Input Rules
 To ensure correct usage:
 
-- For PlainText sentences, include each sentence in square brackets and single quotes, like this: PlainText=['sentence1', 'sentence2'].
+- For PlainText sentences, include each sentence in square brackets and single quotes, like this: PlainText=['text1', 'text2'].
 - Supported file formats include TXT, CSV, and JSON. In JSON and CSV files, the column containing sentences must be labeled "sentences" for accurate predictions.
 
 ## Running Predictions
