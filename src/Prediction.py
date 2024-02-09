@@ -169,7 +169,7 @@ else:
         model_name = models[model_name]['name']
         results[model_name] = model_results
 
-    # Perform majority voting ensemble for each sentence if MajorityVoting=YES
+    
     majority_results = {i: {label: [] for label in emotion_labels} for i in range(len(sentences))}
     if instructions.get("MajorityVoting", "NO").lower() == 'yes':
         for model_results in results.values():
@@ -177,7 +177,7 @@ else:
                 for label, probability in result.items():
                     majority_results[i][label].append(probability)
 
-        # Calculate majority voting ensemble probabilities for each sentence
+        
         majority_sentence_results = {i: {} for i in range(len(sentences))}
         for i, emotion_dict in majority_results.items():
             for label, probabilities in emotion_dict.items():
