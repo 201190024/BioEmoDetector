@@ -39,21 +39,21 @@ This phase configures and fine-tunes Pre-trained Language Models (PLMs) to recog
 
 1. Customize the Configuration file (Configuration.txt) to specify the models you want to use for predictions.
 2. Choose whether to enable majority voting (MajorityVoting=yes) for ensemble results.
-3. Provide a file path in the Configuration file (e.g., File=path) or enter plaintext sentences (e.g., PlainText=['text1', 'text2']).
+3. Provide a file path in the Configuration file (e.g., File=path) or enter plaintext (e.g., PlainText=['text1', 'text2']).
 
 ## Important Notes
 
 - If no models are selected, an error message will guide the user to check the configuration file.
 - If the user provides a file path and excludes PlainText=none, predictions will focus only on the file content.
-- Conversely, if the user enters PlainText sentences and excludes File=none, predictions will focus exclusively on those sentences.
+- Conversely, if the user enters PlainText and excludes File=none, predictions will focus exclusively on those texts.
 - Priority is given to file predictions. if the user provides a file path and PlainText, predictions will focus only on the file content.
 - An error message prompts correction if both File=None and PlainText=None are excluded.
 
 ## Input Rules
 To ensure correct usage:
 
-- For PlainText, include each sentence in square brackets and single quotes, like this: PlainText=['text1', 'text2'].
-- Supported file formats include TXT, CSV, and JSON. In JSON and CSV files, the column containing opinions must be labeled "texts" for accurate predictions.
+- For PlainText, include each text in square brackets and single quotes, like this: PlainText=['text1', 'text2'].
+- Supported file formats include TXT, CSV, and JSON. In the case of using an external file, the program supports three types of formats for the files: TXT, CSV, and JSON. When using a JSON file, the field containing the opinions must be labeled as "texts" and every opinion has to be written in quotation marks. For CSV files, the first row must be also labeled as "texts" and every row represents one opinion.  For the TXT files, the first row represents the first opinion. 
 
 ## Running Predictions
 Once the Configuration file is customized, initiate the prediction process with the following steps:
