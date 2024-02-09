@@ -124,10 +124,10 @@ else:
         if file_extension == 'json':
             with open(input_file_name, 'r') as json_file:
                 data = json.load(json_file)
-                sentences = data["sentences"]
+                sentences = data["texts"]
         elif file_extension == 'csv':
             df = pd.read_csv(input_file_name)
-            sentences = df["sentences"].tolist()
+            sentences = df["texts"].tolist()
         elif file_extension == 'txt':
             with open(input_file_name, 'r') as txt_file:
                 sentences = txt_file.read().splitlines()
