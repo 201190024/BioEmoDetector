@@ -53,7 +53,7 @@ This phase configures and fine-tunes Pre-trained Language Models (PLMs) to recog
 To ensure correct usage:
 
 - For PlainText, include each text in square brackets and single quotes, like this: PlainText=['text1', 'text2'].
-- Supported file formats include TXT, CSV, and JSON. In the case of using an external file, the program supports three types of formats for the files: TXT, CSV, and JSON. When using a JSON file, the field containing the opinions must be labeled as "texts" and every opinion has to be written in quotation marks. For CSV files, the first row must be also labeled as "texts" and every row represents one opinion.  For the TXT files, the first row represents the first opinion. 
+- In the case of using an external file, the program supports three types of formats for the files: TXT, CSV, and JSON. When using a JSON file, the field containing the opinions must be labeled as "texts" and every opinion has to be written in quotation marks. For CSV files, the first row must be also labeled as "texts" and every row represents one opinion.  For the TXT files, the first row represents the first opinion. 
 
 ## Running Predictions
 Once the Configuration file is customized, initiate the prediction process with the following steps:
